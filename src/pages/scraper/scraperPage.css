@@ -1,0 +1,43 @@
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.image-container {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* HIDE RADIO */
+.radio { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* IMAGE STYLES */
+.radio + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  .radio:checked + img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    width: 230px;
+    height: 230px;
+  }
